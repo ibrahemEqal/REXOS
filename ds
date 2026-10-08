@@ -1,0 +1,22 @@
+const menuItemsData = {
+  en: [
+    { id: 1, category: "Signature", name: "Wagyu A5 Truffle", description: "Charcoal-grilled A5 Japanese Wagyu, black winter truffle, smoked bone marrow reduction.", price: "$185", badge: "Signature", image:"/dishes/wagyu.jpeg" },
+    { id: 2, category: "Signature", name: "Black Pearl Caviar", description: "Imperial Beluga Caviar, crème fraîche, cured egg yolk, gold leaf, house-made blinis.", price: "$240", badge: "Chef's Choice", image: "/dishes/caviar.jpeg" },
+    { id: 3, category: "Starters", name: "Hokkaido Scallop", description: "Pan-seared Hokkaido scallop, yuzu kosho, fermented white asparagus, sea grape.", price: "$42", image: "/dishes/scallop.jpeg" },
+    { id: 4, category: "Starters", name: "Smoked Venison Tartare", description: "Hand-cut venison, cured egg yolk, pickled elderberry, rye crisps.", price: "$38", image: "/dishes/Tartare.jpeg" },
+    { id: 5, category: "Main Courses", name: "Dry-Aged Duck Crown", description: "14-day dry-aged duck, glazed with local honey and lavender, served with textures of beetroot.", price: "$110", image: "/dishes/duck.jpeg" },
+    { id: 6, category: "Main Courses", name: "Chilean Sea Bass", description: "Poached in kombu butter, white miso emulsion, sea beans, charred leek oil.", price: "$95", image: "/dishes/bass.jpeg" },
+    { id: 7, category: "Desserts", name: "Midnight Cacao", description: "72% dark Valrhona chocolate, espresso caviar, toasted hazelnut, smoked vanilla bean ice cream.", price: "$45", image: "/dishes/cacao.jpeg" },
+    { id: 8, category: "Desserts", name: "White Truffle Honey", description: "Aerated white chocolate, Piedmont truffle honey, gold leaf, milk skin.", price: "$55", badge: "New", image: "/dishes/honey.jpeg" },
+  ],
+  ar: [
+    { id: 1, category: "Signature", name: "واغيو A5 بالترافل", description: "لحم واغيو ياباني A5 مشوي على الفحم، ترافل الشتاء الأسود، مع اختزال نخاع العظم المدخن.", price: "$185", badge: "طبق خاص", image: "/dishes/wagyu.jpeg" },
+    { id: 2, category: "Signature", name: "كافيار اللؤلؤة السوداء", description: "كافيار بيلوجا إمبراطوري، كريم فريش، صفار بيض معتق، رقائق الذهب الخالص، وبليني محلي الصنع.", price: "$240", badge: "خيار الشيف", image: "/dishes/caviar.jpeg" },
+    { id: 3, category: "Starters", name: "سكالوب هوكايدو", description: "سكالوب هوكايدو المحمر، يوزو كوشو، الهليون الأبيض المخمر، عنب البحر.", price: "$42", image: "/dishes/scallop.jpeg" },
+    { id: 4, category: "Starters", name: "تارتار لحم الغزال المدخن", description: "لحم غزال مقطع يدوياً، صفار بيض معتق، خمان مخلل، رقائق الجاودار.", price: "$38", image: "/dishes/Tartare.jpeg" },
+    { id: 5, category: "Main Courses", name: "تاج البط المعتق", description: "بط معتق لمدة 14 يوماً، مطلي بالعسل المحلي واللافندر، يقدم مع قوام الشمندر.", price: "$110", image: "/dishes/duck.jpeg" },
+    { id: 6, category: "Main Courses", name: "القاروص التشيلي", description: "مسلوق في زبدة الكومبو، مستحلب الميسو الأبيض، فاصوليا البحر، زيت الكراث المشوي.", price: "$95", image: "/dishes/bass.jpeg" },
+    { id: 7, category: "Desserts", name: "كاكاو منتصف الليل", description: "شوكولاتة فالرونا الداكنة 72%، كافيار الإسبريسو، بندق محمص، وآيس كريم الفانيليا المدخنة.", price: "$45", image: "/dishes/cacao.jpeg" },
+    { id: 8, category: "Desserts", name: "عسل الكمأة البيضاء", description: "شوكولاتة بيضاء مهواة، عسل كمأة بيدمونت، أوراق الذهب، قشرة الحليب.", price: "$55", badge: "جديد", image: "/dishes/honey.jpeg" },
+  ],
+};
