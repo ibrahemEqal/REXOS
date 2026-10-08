@@ -58,21 +58,9 @@ export default function Navbar() {
             >
               {isRtl ? "القائمة" : "Menu"}
             </Link>
-            <Link
-              href="/private-dining"
-              className="text-rexos-text/80 hover:text-rexos-gold uppercase tracking-[0.15em] text-xs transition-colors"
-            >
-              {isRtl ? "الفعاليات" : "Private Dining"}
-            </Link>
 
             {/* الأزرار */}
             <div className="flex items-center gap-5 border-l border-rexos-secondary pl-8">
-              <Link
-                href="/reservations"
-                className="border border-rexos-gold/60 hover:bg-rexos-gold hover:text-rexos-primary text-rexos-text uppercase tracking-[0.15em] text-xs px-7 py-2.5 transition-all duration-300 font-medium"
-              >
-                {isRtl ? "احجز طاولة" : "Book a Table"}
-              </Link>
               <button
                 onClick={toggleLanguage}
                 className="flex items-center gap-2 border border-rexos-text/30 hover:border-rexos-gold px-4 py-2 transition-all text-xs text-rexos-gold"
@@ -128,20 +116,6 @@ export default function Navbar() {
               className="font-[family-name:var(--font-cormorant)] text-5xl text-rexos-text hover:text-rexos-gold transition-colors"
             >
               {isRtl ? "القائمة" : "Menu"}
-            </Link>
-            <Link
-              href="/private-dining"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="font-[family-name:var(--font-cormorant)] text-5xl text-rexos-text hover:text-rexos-gold transition-colors"
-            >
-              {isRtl ? "الفعاليات" : "Private Dining"}
-            </Link>
-            <Link
-              href="/reservations"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="mt-8 border border-rexos-gold/60 text-rexos-gold uppercase tracking-[0.2em] text-sm px-12 py-5 font-medium"
-            >
-              {isRtl ? "احجز طاولة" : "Book a Table"}
             </Link>
           </motion.div>
         )}
