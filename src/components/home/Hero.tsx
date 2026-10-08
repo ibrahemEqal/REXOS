@@ -125,7 +125,7 @@ const reduceMotion = useSyncExternalStore(
           <span className="h-px flex-1 bg-gradient-to-l from-transparent to-rexos-accent/60" />
         </motion.div>
 
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 items-center">
+        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 items-center">
           <Link
             href="/menu"
             className="group relative px-8 py-4 border border-rexos-accent/30 bg-rexos-accent/10 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-rexos-accent hover:bg-rexos-accent text-rexos-text hover:text-rexos-primary uppercase tracking-widest text-xs"
@@ -135,8 +135,11 @@ const reduceMotion = useSyncExternalStore(
             <span className="relative z-10">{t.explore}</span>
           </Link>
 
+          <a href="https://wa.me/972594084898" target="_blank" rel="noreferrer" className="px-8 py-4 bg-rexos-accent text-rexos-primary uppercase tracking-widest text-xs font-semibold transition hover:bg-rexos-text">
+            {t.whatsapp}
+          </a>
           <Link
-            href="#discover"
+            href="/contact"
             className="group px-8 py-4 text-rexos-text uppercase tracking-widest text-xs transition-colors hover:text-rexos-accent flex items-center gap-2"
           >
             {t.discover}
