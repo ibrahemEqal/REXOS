@@ -86,7 +86,7 @@ export default function ContactPage() {
               {t.formTitle}
             </h3>
             
-            <form className="flex flex-col gap-10" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col gap-10" onSubmit={(e) => { e.preventDefault(); window.open("https://wa.me/972594084898?text=REXOS%20website%20inquiry", "_blank"); }}>
               <div className="relative group">
                 <input 
                   type="text" 
