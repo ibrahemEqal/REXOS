@@ -52,8 +52,8 @@ export default function ContactPage() {
                 {t.address}
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href="tel:+970594084898" className="border border-rexos-accent/50 px-4 py-3 text-xs text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.phone}</a>
-                <a href="https://wa.me/972594084898" target="_blank" rel="noreferrer" className="border border-rexos-accent/50 px-4 py-3 text-xs text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.whatsapp}</a>
+                <a href="tel:+970597600024" className="border border-rexos-accent/50 px-4 py-3 text-xs text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.phone}</a>
+                <a href="https://wa.me/970597600024" target="_blank" rel="noreferrer" className="border border-rexos-accent/50 px-4 py-3 text-xs text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.whatsapp}</a>
               </div>
             </div>
 
@@ -81,7 +81,7 @@ export default function ContactPage() {
               {t.formTitle}
             </h3>
             
-            <form className="flex flex-col gap-10" onSubmit={(e) => { e.preventDefault(); window.open("https://wa.me/972594084898?text=REXOS%20website%20inquiry", "_blank"); }}>
+            <form className="flex flex-col gap-10" onSubmit={(e) => { e.preventDefault(); window.open("https://wa.me/970597600024?text=REXOS%20website%20inquiry", "_blank"); }}>
               <div className="relative group">
                 <input 
                   type="text" 
