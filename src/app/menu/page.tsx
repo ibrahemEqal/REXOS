@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, type Variants } from "framer-motion";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
 import { ShoppingBag, X, Plus, Minus, Check } from "lucide-react";
@@ -241,44 +240,6 @@ export default function MenuPage() {
                       index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
                     }`}
                   >
-                    <div className="w-full lg:w-1/2 relative h-[40vh] md:h-[500px] overflow-hidden group bg-rexos-secondary/10">
-                      {/* frame reveal — a hairline gold border that draws
-                          in on hover, reinforcing the "framed dish" feel */}
-                      <div className="absolute inset-3 border border-rexos-accent/0 group-hover:border-rexos-accent/40 transition-colors duration-700 z-20 pointer-events-none" />
-                      <motion.div
-                        className="absolute inset-0"
-                        initial={{ scale: 1.08 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-                      >
-                        <Image
-                          src={item.image}
-                          alt={itemName}
-                          fill
-                          className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
-                        />
-                      </motion.div>
-                      {/* subtle bottom gradient for depth + legibility if a
-                          badge/label ever sits over the image */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-rexos-primary/40 via-transparent to-transparent z-10" />
-                      {item.badge && (
-                        <motion.div
-                          initial={{ opacity: 0, x: isRtl ? 12 : -12 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.3, duration: 0.5 }}
-                          className={`absolute top-6 ${
-                            isRtl ? "right-6" : "left-6"
-                          } z-20 bg-rexos-primary/90 backdrop-blur-sm border border-rexos-accent/30 px-4 py-2`}
-                        >
-                          <span className="uppercase tracking-[0.2em] text-rexos-accent text-[10px] font-bold">
-                            {item.badge}
-                          </span>
-                        </motion.div>
-                      )}
-                    </div>
-
                     <div className="w-full lg:w-1/2 flex flex-col justify-center">
                       <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl text-rexos-text mb-6">
                         {itemName}
