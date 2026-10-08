@@ -8,6 +8,7 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -36,11 +37,8 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between">
           
           {/* الشعار */}
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl text-rexos-text tracking-[0.2em] relative z-[60]"
-          >
-            REXOS
+          <Link href="/" className="relative z-[60] block h-12 w-32 md:h-14 md:w-40">
+            <Image src="/brand/rexos-logo.svg" alt="REXOS Restaurant & Cafe" fill className="object-contain brightness-0 invert" priority />
           </Link>
 
           {/* روابط سطح المكتب */}
