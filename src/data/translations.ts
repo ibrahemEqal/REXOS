@@ -44,7 +44,7 @@ export const translations = {
       emptyOrder: "Your selection is empty.",
     },
     footer: {
-      desc: "Where taste becomes art. A Michelin-level luxury culinary experience designed for the senses.",
+      desc: "Where taste becomes art. A polished dining experience crafted for good food, warm gatherings, and memorable evenings.",
       explore: "Explore",
       connect: "Connect",
       rights: "All rights reserved.",
@@ -136,7 +136,7 @@ about: {
       emptyOrder: "لم تقم باختيار أطباق بعد.",
     },
     footer: {
-      desc: "حيث يتحول المذاق إلى فن. تجربة طهي فاخرة بمستوى نجوم ميشلان مصممة لتحريك الحواس.",
+      desc: "حيث يتحول المذاق إلى فن. تجربة طعام أنيقة تجمع النكهة، الأجواء الدافئة، واللحظات التي تستحق الإعادة.",
       explore: "استكشف",
       connect: "تواصل معنا",
       rights: "جميع الحقوق محفوظة.",
