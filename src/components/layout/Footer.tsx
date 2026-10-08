@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
 
@@ -13,9 +14,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-20">
         
         <div className="flex flex-col gap-4 max-w-sm">
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl text-rexos-text">
-            REXOS
-          </h2>
+          <div className="relative h-14 w-40">
+            <Image src="/brand/rexos-logo.svg" alt="REXOS Restaurant & Cafe" fill className="object-contain brightness-0 invert" />
+          </div>
           <p className="text-rexos-text/50 text-sm font-light leading-relaxed">
             {t.desc}
           </p>
