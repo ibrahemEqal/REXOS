@@ -8,7 +8,7 @@ import { translations } from "@/data/translations";
 import { categories, menuItems, MenuItem } from "@/data/menuData";
 
 type CartItem = { id: number; name: string; price: number; quantity: number; notes: string };
-const WHATSAPP = "972594084898";
+const WHATSAPP = "970597600024";
 
 export default function MenuPage() {
   const { language, isRtl } = useLanguage();
