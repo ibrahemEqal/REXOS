@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -7,13 +8,16 @@
   --color-rexos-text: #F4EFE6;
   --color-rexos-accent: #C8A97E;
   --color-rexos-gold: #C8A97E;
-  --font-cormorant: var(--font-cormorant);
-  --font-inter: var(--font-inter);
+  --font-sans: "Cairo", "Tajawal", "Noto Kufi Arabic", "Noto Sans Arabic", Arial, sans-serif;
+  --font-cormorant: "Cairo", "Tajawal", "Noto Kufi Arabic", "Noto Sans Arabic", Arial, sans-serif;
+  --font-inter: "Cairo", "Tajawal", "Noto Kufi Arabic", "Noto Sans Arabic", Arial, sans-serif;
 }
 
 body {
   background-color: #0A0908;
   color: #F4EFE6;
+  font-family: "Cairo", "Tajawal", "Noto Kufi Arabic", "Noto Sans Arabic", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
