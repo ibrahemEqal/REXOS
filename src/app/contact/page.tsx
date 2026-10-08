@@ -51,6 +51,10 @@ export default function ContactPage() {
               <p className="text-rexos-text/70 font-light leading-relaxed max-w-sm">
                 {t.address}
               </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a href="tel:+970594084898" className="border border-rexos-accent/50 px-4 py-3 text-xs text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.phone}</a>
+                <a href="https://wa.me/972594084898" target="_blank" rel="noreferrer" className="border border-rexos-accent/50 px-4 py-3 text-xs text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.whatsapp}</a>
+              </div>
             </div>
 
             <div>
@@ -111,6 +115,11 @@ export default function ContactPage() {
             </form>
           </motion.div>
         </div>
+
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-10 overflow-hidden border border-rexos-secondary">
+          <iframe title="Rexos location in Rafidia, Nablus" src="https://www.google.com/maps?q=Rexos%20Cafe%20Restaurant%20Rafidia%20Nablus&output=embed" className="h-72 w-full border-0 grayscale-[35%] md:h-96" loading="lazy" />
+          <a href="https://www.google.com/maps/search/?api=1&query=Rexos+Cafe+Restaurant+Rafidia+Nablus" target="_blank" rel="noreferrer" className="block border-t border-rexos-secondary bg-rexos-secondary/30 px-5 py-4 text-center text-xs uppercase tracking-[0.18em] text-rexos-accent transition hover:bg-rexos-accent hover:text-rexos-primary">{t.map}</a>
+        </motion.div>
 
       </div>
     </main>
