@@ -30,7 +30,6 @@ export const categories: Category[] = [
   { id: "mojito", ar: "موهيتو", en: "Mojito" },
   { id: "soft_drinks", ar: "المشروبات الباردة", en: "Soft Drinks" },
   { id: "matcha", ar: "ماتشا", en: "Matcha" },
-  { id: "tobacco", ar: "تمباك", en: "Tobacco" }
 ];
 
 export const menuItems: MenuItem[] = [
@@ -92,5 +91,4 @@ export const menuItems: MenuItem[] = [
   { id: 1001, categoryId: "signature_hot_chocolate", name: { ar: "باريسيان هوت شوكوليت", en: "Parisian Hot Chocolate" }, description: { ar: "", en: "" }, numericPrice: 25, price: "₪25", image: "/dishes/drink.jpg" },
   { id: 1101, categoryId: "mojito", name: { ar: "موهيتو إنرجي", en: "Energy Mojito" }, description: { ar: "", en: "" }, numericPrice: 22, price: "₪22", image: "/dishes/drink.jpg" },
   { id: 1201, categoryId: "hot_coffee", name: { ar: "اسبريسو", en: "Espresso" }, description: { ar: "", en: "" }, numericPrice: 10, price: "₪10", image: "/dishes/drink.jpg" },
-  { id: 1301, categoryId: "tobacco", name: { ar: "ريكسوس مكس", en: "Rexos Mix" }, description: { ar: "", en: "" }, numericPrice: 40, price: "₪40", image: "/dishes/shisha.jpg" },
 ];
