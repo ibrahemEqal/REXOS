@@ -69,7 +69,7 @@ const reduceMotion = useSyncExternalStore(
         className="absolute inset-0 w-full h-[120%] -top-[10%]"
       >
         <video autoPlay loop muted playsInline className="object-cover w-full h-full">
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="/videos/hero-video.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
