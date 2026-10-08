@@ -41,10 +41,10 @@ export default function Footer() {
             <h4 className="uppercase tracking-widest text-rexos-accent text-xs font-semibold mb-2">
               {t.connect}
             </h4>
-            <a href="#" className="text-rexos-text/70 hover:text-rexos-accent transition-colors text-sm">
+            <a href="https://www.instagram.com/rexoscafeandresturant/" target="_blank" rel="noreferrer" className="text-rexos-text/70 hover:text-rexos-accent transition-colors text-sm">
               {isRtl ? "إنستغرام" : "Instagram"}
             </a>
-            <a href="#" className="text-rexos-text/70 hover:text-rexos-accent transition-colors text-sm">
+            <a href="https://www.facebook.com/share/1HHVwwvSze/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="text-rexos-text/70 hover:text-rexos-accent transition-colors text-sm">
               {isRtl ? "فيسبوك" : "Facebook"}
             </a>
             <Link href="/contact" className="text-rexos-text/70 hover:text-rexos-accent transition-colors text-sm">
