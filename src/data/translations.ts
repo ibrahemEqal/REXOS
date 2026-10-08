@@ -6,6 +6,10 @@ export const translations = {
       tagline: "Where Taste Becomes Art.",
       explore: "Explore Menu",
       discover: "Discover REXOS",
+      whatsapp: "Order via WhatsApp",
+      reservation: "Book a table",
+      location: "Nablus, Rafidia",
+      hours: "Sat - Thu: 9:00 AM - 12:00 AM · Fri: 1:00 PM - 12:00 AM",
     },
     about: {
       tag: "The Philosophy",
@@ -58,6 +62,9 @@ export const translations = {
       email: "Email Address",
       message: "Your Message",
       submit: "Send Message",
+      phone: "Call the restaurant",
+      whatsapp: "Message us on WhatsApp",
+      map: "Open in Google Maps",
     },
     reservations: {
       tag: "Secure Your Experience",
@@ -91,6 +98,10 @@ export const translations = {
       tagline: "حيث يتحول المذاق إلى فن.",
       explore: "استكشف القائمة",
       discover: "اكتشف ريكسوس",
+      whatsapp: "اطلب عبر واتساب",
+      reservation: "احجز طاولة",
+      location: "نابلس، رفيديا",
+      hours: "السبت - الخميس: 9 صباحاً - 12 ليلاً · الجمعة: 1 ظهراً - 12 ليلاً",
     },
 about: {
   tag: "فلسفتنا",
@@ -143,6 +154,9 @@ about: {
       email: "البريد الإلكتروني",
       message: "رسالتك",
       submit: "إرسال الرسالة",
+      phone: "اتصل بالمطعم",
+      whatsapp: "راسلنا عبر واتساب",
+      map: "افتح الموقع على خرائط جوجل",
     },
     reservations: {
       tag: "احجز تجربتك",
