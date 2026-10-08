@@ -1,21 +1,9 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
-
-const cormorant = Cormorant_Garamond({ 
-  subsets: ["latin"], 
-  weight: ["300", "400", "600"],
-  variable: '--font-cormorant'
-});
-
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-inter'
-});
 
 export const metadata: Metadata = {
   title: "Rexos Cafe & Restaurant | Nablus, Rafidia",
@@ -35,13 +23,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${cormorant.variable} ${inter.variable} bg-rexos-primary text-rexos-text font-sans antialiased relative`}>
+      <body className="bg-rexos-primary text-rexos-text font-sans antialiased relative">
       <LanguageProvider> 
           <SmoothScroll>
             <Navbar />
             {children}
             <Footer />
-            <a href="https://wa.me/972594084898" target="_blank" rel="noreferrer" aria-label="WhatsApp REXOS" className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-2xl shadow-lg shadow-black/30 transition hover:scale-110 md:bottom-7 md:right-7">
+            <a href="https://wa.me/970597600024" target="_blank" rel="noreferrer" aria-label="WhatsApp REXOS" className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-2xl shadow-lg shadow-black/30 transition hover:scale-110 md:bottom-7 md:right-7">
               <span aria-hidden className="text-sm font-bold">WA</span>
             </a>
           </SmoothScroll>
