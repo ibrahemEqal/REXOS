@@ -36,11 +36,11 @@ export default function Cta() {
           transition={{ duration: 1, delay: 0.4 }}
         >
           <Link 
-            href="/reservations"
+            href="/contact"
             className="group relative inline-flex items-center justify-center px-10 py-5 border border-rexos-text/20 overflow-hidden transition-all duration-500 hover:border-rexos-accent hover:bg-rexos-accent/5 text-rexos-text uppercase tracking-[0.2em] text-xs"
           >
             <span className="relative z-10 group-hover:text-rexos-accent transition-colors duration-500">
-              Request a Reservation
+              Contact Us
             </span>
             <div className="absolute inset-0 bg-rexos-accent/5 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
           </Link>
