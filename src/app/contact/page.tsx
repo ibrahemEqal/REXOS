@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
 
@@ -66,14 +65,6 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div>
-              <h3 className="font-[family-name:var(--font-cormorant)] text-3xl text-rexos-accent mb-4">
-                {t.parkingTitle}
-              </h3>
-              <p className="text-rexos-text/70 font-light leading-relaxed max-w-sm">
-                {t.parking}
-              </p>
-            </div>
           </motion.div>
 
           <motion.div 
@@ -100,18 +91,6 @@ export default function ContactPage() {
               </div>
 
               <div className="relative group">
-                <input 
-                  type="email" 
-                  required
-                  className={`w-full bg-transparent border-b border-rexos-text/20 py-3 text-rexos-text outline-none transition-colors focus:border-rexos-accent peer ${isRtl ? 'text-right' : 'text-left'}`}
-                  placeholder=" "
-                />
-                <label className={`absolute top-3 ${isRtl ? 'right-0' : 'left-0'} text-rexos-text/50 text-sm transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-rexos-accent peer-valid:-top-4 peer-valid:text-xs pointer-events-none`}>
-                  {t.email}
-                </label>
-              </div>
-
-              <div className="relative group">
                 <textarea 
                   required
                   rows={4}
@@ -132,27 +111,6 @@ export default function ContactPage() {
             </form>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="mt-32 relative h-[40vh] md:h-[500px] w-full overflow-hidden"
-        >
-          <div className="absolute inset-0 bg-rexos-primary/40 z-10" />
-          <Image
-            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop"
-            alt="REXOS Restaurant Ambiance"
-            fill
-            className="object-cover grayscale-[30%]"
-          />
-          <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
-             <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-6xl text-rexos-text/80 uppercase tracking-widest mix-blend-overlay">
-                REXOS
-             </h2>
-          </div>
-        </motion.div>
 
       </div>
     </main>
