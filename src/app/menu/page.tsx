@@ -2,24 +2,29 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Minus, Plus, ShoppingBag, X } from "lucide-react";
+import { Minus, Plus, Search, ShoppingBag, X } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
 import { categories, menuItems, MenuItem } from "@/data/menuData";
 
 type CartItem = { id: number; name: string; price: number; quantity: number; notes: string };
-const WHATSAPP = "970597600024";
+const WHATSAPP = "972594084898";
 
 export default function MenuPage() {
   const { language, isRtl } = useLanguage();
   const t = translations[language].menuPage;
-  const [activeCategory, setActiveCategory] = useState(categories[0].id);
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [query, setQuery] = useState("");
   const [cart, setCart] = useState<CartItem[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [orderType, setOrderType] = useState<"pickup" | "delivery">("pickup");
   const [address, setAddress] = useState("");
 
-  const items = useMemo(() => menuItems.filter((item) => item.categoryId === activeCategory), [activeCategory]);
+  const items = useMemo(() => menuItems.filter((item) => {
+    const matchesCategory = activeCategory === "all" || item.categoryId === activeCategory;
+    const text = (item.name.en + " " + item.name.ar + " " + item.description.en + " " + item.description.ar).toLowerCase();
+    return matchesCategory && (!query.trim() || text.includes(query.toLowerCase()));
+  }), [activeCategory, query]);
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -69,8 +74,14 @@ export default function MenuPage() {
           </p>
         </div>
 
-        <div className="sticky top-[76px] z-30 mt-14 border-y border-rexos-secondary bg-rexos-primary/95 py-3 backdrop-blur-md">
+        <div className="mx-auto mt-10 flex max-w-2xl items-center gap-3 rounded-xl border border-rexos-text/15 bg-rexos-secondary/45 px-4 py-3 focus-within:border-rexos-accent">
+          <Search size={18} className="shrink-0 text-rexos-accent" />
+          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={isRtl ? "ابحث عن طبق أو مشروب..." : "Search dishes and drinks..."} className="w-full bg-transparent text-sm text-rexos-text outline-none placeholder:text-rexos-text/40" />
+        </div>
+
+        <div className="sticky top-[76px] z-30 mt-6 border-y border-rexos-secondary bg-rexos-primary/95 py-3 backdrop-blur-md">
           <div className="flex gap-2 overflow-x-auto hide-scrollbar">
+            <button onClick={() => setActiveCategory("all")} className={"shrink-0 rounded-full border px-4 py-2 text-xs transition " + (activeCategory === "all" ? "border-rexos-accent bg-rexos-accent text-rexos-primary" : "border-rexos-text/15 text-rexos-text/65 hover:border-rexos-accent/60 hover:text-rexos-text")}>{isRtl ? "الكل" : "All"}</button>
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -90,7 +101,7 @@ export default function MenuPage() {
         <div className="mt-12">
           <div className="mb-8 flex items-end justify-between border-b border-rexos-secondary pb-4">
             <h2 className="font-[family-name:var(--font-cormorant)] text-4xl text-rexos-text">
-              {categories.find((category) => category.id === activeCategory)?.[language]}
+              {activeCategory === "all" ? (isRtl ? "كل الأصناف" : "All menu items") : categories.find((category) => category.id === activeCategory)?.[language]}
             </h2>
             <span className="text-xs text-rexos-text/40">{items.length} {isRtl ? "صنف" : "items"}</span>
           </div>
