@@ -135,7 +135,7 @@ const reduceMotion = useSyncExternalStore(
             <span className="relative z-10">{t.explore}</span>
           </Link>
 
-          <a href="https://wa.me/972594084898" target="_blank" rel="noreferrer" className="px-8 py-4 bg-rexos-accent text-rexos-primary uppercase tracking-widest text-xs font-semibold transition hover:bg-rexos-text">
+          <a href="https://wa.me/970597600024" target="_blank" rel="noreferrer" className="px-8 py-4 bg-rexos-accent text-rexos-primary uppercase tracking-widest text-xs font-semibold transition hover:bg-rexos-text">
             {t.whatsapp}
           </a>
           <Link
